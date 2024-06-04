@@ -75,5 +75,5 @@ void LightAccessory::identifyYourSelf()
                         vTaskDelay(500 / portTICK_PERIOD_MS);
                     }
                     vTaskDelete(nullptr); },
-                "identify_task", 2048, this, 5, nullptr);
+                "light_identify_task", 2048, this, 5, nullptr);
 }

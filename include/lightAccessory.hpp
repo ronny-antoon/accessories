@@ -1,5 +1,5 @@
-#ifndef LIGHTACCESSORY_HPP
-#define LIGHTACCESSORY_HPP
+#ifndef LIGHT_ACCESSORY_HPP
+#define LIGHT_ACCESSORY_HPP
 
 #include <hal/gpio_types.h>
 
@@ -60,4 +60,4 @@ private:
     static void buttonCallback(void *button_handle, void *this_ptr);
 };
 
-#endif // LIGHTACCESSORY_HPP
+#endif // LIGHT_ACCESSORY_HPP

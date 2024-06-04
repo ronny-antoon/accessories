@@ -1,0 +1,6 @@
+# menu "accessories"
+
+#     config AAAA_BBBBBB_CCCCC
+#             bool "AAAA_BBBBBB_CCCCC"
+#             default y
+# endmenu

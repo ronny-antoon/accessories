@@ -6,4 +6,6 @@ dependencies:
   ronny-antoon/on_error:
     version: "^0.0.1"
     require: "private"
+  espressif/button:
+    version: ^3.2.0
   idf: ">=4.1.0"

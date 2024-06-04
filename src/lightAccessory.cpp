@@ -7,7 +7,7 @@
 #include <freertos/task.h>
 
 LightAccessory::LightAccessory(gpio_num_t button_pin, gpio_num_t led_pin)
-{
+{ 
     ESP_LOGI(__FILENAME__, "call %s", __FUNCTION__);
     ESP_LOGV(__FILENAME__, "button_pin: %d, led_pin: %d", button_pin, led_pin);
 

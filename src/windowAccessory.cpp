@@ -7,7 +7,7 @@
 WindowAccessory::WindowAccessory(gpio_num_t button_down_pin, gpio_num_t button_up_pin, gpio_num_t motor_up_pin, gpio_num_t motor_down_pin, uint32_t time_to_open, uint32_t time_to_close)
 {
     ESP_LOGI(__FILENAME__, "call %s", __FUNCTION__);
-    ESP_LOGV(__FILENAME__, "button_down_pin: %d, button_up_pin: %d, motor_up_pin: %d, motor_down_pin: %d, time_to_open: %d, time_to_close: %d", button_down_pin, button_up_pin, motor_up_pin, motor_down_pin, time_to_open, time_to_close);
+    ESP_LOGV(__FILENAME__, "button_down_pin: %d, button_up_pin: %d, motor_up_pin: %d, motor_down_pin: %d, time_to_open: %d, time_to_close: %d", button_down_pin, button_up_pin, motor_up_pin, motor_down_pin, (int)time_to_open, (int)time_to_close);
 
     m_button_down_pin = button_down_pin;
     m_button_up_pin = button_up_pin;
@@ -86,7 +86,7 @@ void WindowAccessory::buttonDownCallback(void *button_handle, void *this_ptr)
 void WindowAccessory::startMoveBlind(MoveDirection direction)
 {
     ESP_LOGI(__FILENAME__, "call %s", __FUNCTION__);
-    ESP_LOGV(__FILENAME__, "direction: %d", direction);
+    ESP_LOGV(__FILENAME__, "direction: %d", (int)direction);
 
     if (direction == MoveDirection::UP)
     {

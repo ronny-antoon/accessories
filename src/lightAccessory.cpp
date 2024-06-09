@@ -17,7 +17,7 @@ LightAccessory::LightAccessory(gpio_num_t button_pin, gpio_num_t led_pin)
     gpio_set_direction(m_button_pin, GPIO_MODE_INPUT);
     gpio_set_direction(m_led_pin, GPIO_MODE_INPUT_OUTPUT);
 
-    gpio_set_level(m_led_pin, 0); // TODO: Change to last known state
+    // gpio_set_level(m_led_pin, 0); // TODO: Change to last known state
 
     button_config_t button_config = {
         .type = BUTTON_TYPE_GPIO,
